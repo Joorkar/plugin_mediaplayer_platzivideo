@@ -1,6 +1,5 @@
 const VERSION = 'v1'
 
-
 self.addEventListener('install', event => {
     event.waitUntil(precache())
 })
@@ -22,14 +21,14 @@ self.addEventListener('fetch', event => {
 async function precache() {
     const cache = await caches.open('VERSION')
     return cache.addAll([
-        '/',
-        '/index.html',
-        '/assets/index.js',
-        '/assets/mediaPlayer.js',
-        '/assets/plugins/autoPlay.js',
-        '/assets/plugins/autoPause.js',
-        '/assets/style.css',
-        '/assets/ejecicio.mkv'
+        // '/',
+        // '/index.html',
+        // '/assets/index.js',
+        // '/assets/mediaPlayer.js',
+        // '/assets/plugins/autoPlay.js',
+        // '/assets/plugins/autoPause.js',
+        // '/assets/style.css',
+        // '/assets/ejecicio.mkv'
     ])
 }
 
